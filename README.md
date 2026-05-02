@@ -58,6 +58,7 @@ Late aircraft — a plane arriving late from a previous flight — accounts for 
 largest share of total delay minutes, revealing a systemic cascading effect across 
 the network.
 
+<img src="PLOT_01TFDMbC.png" alt="Delay distribution" width="1000">
 
 
 ### 2. Airport Size Does Not Predict Delays
