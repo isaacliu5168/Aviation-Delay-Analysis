@@ -75,20 +75,21 @@ G7 is Go jet Airline with 37.2 mins delay per flight.
 QX is Horizon Air with 7.4 mins delay per flight.
 
 <img src="PLOT_03AADbC.png" alt="Performance by carriers" width="1000">
-> **Note:** The graph is interactive inside R Studio.
-
+* The graph is interactive inside R Studio.*
+<br><br><br>
 <img src="PLOT_04DCMbC.png" alt="Delay Cause Distribution in Every Carrier" width="1000">
-> **Note:** The graph is interactive inside R Studio.
+* The graph is interactive inside R Studio.*
 
 ### 4. Weather and NAS Delays Move Together
 Pearson correlation r = 0.19, p = 0.0003. Airports hit by weather also experience 
 elevated NAS delays — consistent with FAA ground stop responses to weather events.
 
 <img src="PLOT_05WNASDpF.png" alt="Weather vs NAS Delay" width="1000">
-> **Note:** Weather vs NAS Delay Plot
-
+Weather vs NAS Delay Plot
+<br><br><br>
 <img src="PLOT_06DCCM.png" alt="Correlation between delay causes" width="1000">
-> **Note:** Correlation between delay causes
+Correlation between delay causes 
+
 
 
 
