@@ -28,6 +28,13 @@ This analysis uses the **Bureau of Transportation Statistics (BTS) Airline_Delay
 - `Download_Column_Definitions.xlsx`: Official BTS data dictionary for all variables
 
 ---
+**Definitions:**
+- **Carrier Delay:** Delays caused by issues within the airline's control — maintenance, crew scheduling, fueling, cleaning, boarding, and catering.
+- **Late Aircraft Delay:** The previous flight using the same aircraft arrived late, causing a ripple delay into the next flight. Also called delay propagation.
+- **NAS Delay:** Delays controlled by the National Airspace System — air traffic control, heavy traffic volume, and non-extreme weather conditions.
+- **Security Delay:** Delays caused by terminal evacuations, security breaches requiring re-boarding, or screening lines exceeding 29 minutes.
+- **Weather Delay:** Delays caused by extreme or hazardous weather at departure, en route, or at the destination airport.
+
 
 ## Research Questions
 1. **Q1 — What is the biggest driver of arrival delay?**
@@ -81,14 +88,18 @@ QX is Horizon Air with 7.4 mins delay per flight.
 * The graph is interactive inside R Studio.*
 
 ### 4. Weather and NAS Delays Move Together
-Pearson correlation r = 0.19, p = 0.0003. Airports hit by weather also experience 
-elevated NAS delays — consistent with FAA ground stop responses to weather events.
+Correlation in the following graph: 
+Correlation Coefficient r = 0.19 (0.19 is a weak positive relationship, the range is -1 to +1)
+the p-value = 0.0003 (Anything below 0.05 is considered statistically significant.)
+Airports hit by weather also experience elevated NAS delays — consistent with FAA ground stop responses to weather events.
 
 <img src="PLOT_05WNASDpF.png" alt="Weather vs NAS Delay" width="1000">
 Weather vs NAS Delay Plot
-<br><br><br>
+<br>
+
+### 5. Correlation between two delay causes
 <img src="PLOT_06DCCM.png" alt="Correlation between delay causes" width="1000">
-Correlation between delay causes 
+This grpah is the correlation between two delay causes. The strongest relationship - Carrier & Late Aircraft 0.88 - shows when carriers fall behind operationally, it directly affects the on time rate the aircraft (which cause late aricraft delay problems). Security is the weakest across the board. Security highest correlation is only 0.5 with late aricraft, and 0.27 with weather. It really operates independetly with small to little correlation with others.
 
 
 
